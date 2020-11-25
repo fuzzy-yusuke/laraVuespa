@@ -1,6 +1,7 @@
 import VueRouter from 'vue-router';
 import HeaderComponent from "./components/HeaderComponent"; //各ページのヘッダーを表示するコンポーネント
 import TaskListComponent from "./components/TaskListComponent"; //タスク一覧を表示するコンポーネント
+import TaskShowComponent from "./components/TaskShowComponent"; //タスクの詳細ページを表示するコンポーネント
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -20,6 +21,12 @@ const router = new VueRouter({
             path: '/tasks', //「/tasks」のURLでアクセスしたら、TaskListComponentを表示させるルーティング
             name: 'task.list',
             component: TaskListComponent
+        },
+        {
+            path: '/tasks/:taskId', //「:taskId」には任意のIDが入る
+            name: 'task.show',
+            component: TaskShowComponent,
+            props: true
         },
     ]
 });
