@@ -3,6 +3,7 @@ import HeaderComponent from "./components/HeaderComponent";         //各ペー�
 import TaskListComponent from "./components/TaskListComponent";     //タスク一覧を表示するコンポーネント
 import TaskCreateComponent from "./components/TaskCreateComponent"; //タスク登録ページを表示するコンポーネント
 import TaskShowComponent from "./components/TaskShowComponent";     //タスクの詳細ページを表示するコンポーネント
+import TaskEditComponent from "./components/TaskEditComponent";     //タスクの編集ページを表示するコンポーネント
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -34,6 +35,12 @@ const router = new VueRouter({
             component: TaskShowComponent,
             props: true
         },
+        {
+            path: '/tasks/:taskId/edit', //「:taskId」には任意のIDが入る
+            name: 'task.edit',
+            component: TaskEditComponent,
+            props: true
+        }
         
     ]
 });
