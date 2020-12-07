@@ -18,6 +18,7 @@ class TaskTableSeeder extends Seeder
                 'title'=>'title'.$i,
                 'content'=>'content'.$i,
                 'person_in_charge'=>'person_in_charge'.$i,
+                'task_date'=>'task_date'.$i,
             ]);
         }
     }
