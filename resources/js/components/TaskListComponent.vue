@@ -7,6 +7,7 @@
                     <th scope="col">Title</th>
                     <th scope="col">Content</th>
                     <th scope="col">Person In Charge</th>
+                    <th scope="col">Task Date</th>
                     <th scope="col">Show</th>
                     <th scope="col">Edit</th>
                     <th scope="col">Delete</th>
@@ -18,6 +19,7 @@
                     <td>Title1</td>
                     <td>Content1</td>
                     <td>Ichiro</td>
+                    <td>2020-12-14</td>
                     <td>
                         <router-link v-bind:to="{name: 'task.show',params: {taskId: 1}}">
                         <button class="btn btn-primary">Show</button>
@@ -39,6 +41,7 @@
                     <td>Title2</td>
                     <td>Content2</td>
                     <td>Jiro</td>
+                    <td>2020-12-20</td>
                     <td>
                         <router-link v-bind:to="{name: 'task.show',params: {taskId: 2}}">
                         <button class="btn btn-primary">Show</button>
@@ -57,6 +60,7 @@
                     <td>Title3</td>
                     <td>Content3</td>
                     <td>Saburo</td>
+                    <td>2021-01-01</td>
                     <td>
                         <router-link v-bind:to="{name: 'task.show',params: {taskId: 3}}">
                         <button class="btn btn-primary">Show</button>

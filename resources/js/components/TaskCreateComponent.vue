@@ -7,8 +7,12 @@
                     <input type="text" class="col-sm-9 form-control" id="title">
                 </div>
                 <div class="form-group row">
-                <label for="person-in-charge" class="col-sm-3 col-form-label">Content</label>
-                <input type="text" class="col-sm-9 form-control" id="person-in-charge">
+                    <label for="person-in-charge" class="col-sm-3 col-form-label">Content</label>
+                    <input type="text" class="col-sm-9 form-control" id="person-in-charge">
+                </div>
+                <div class="form-group row">
+                    <label for="task-date" class="col-sm-3 col-form-label">Task Date</label>
+                    <input type="date" class="col-sm-9 form-control" id="task-date">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

@@ -1990,6 +1990,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2003,6 +2007,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -2127,6 +2135,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2140,6 +2152,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -37902,6 +37918,22 @@ var staticRenderFns = [
             })
           ]),
           _vm._v(" "),
+          _c("div", { staticClass: "form-group row" }, [
+            _c(
+              "label",
+              {
+                staticClass: "col-sm-3 col-form-label",
+                attrs: { for: "task-date" }
+              },
+              [_vm._v("Task Date")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              staticClass: "col-sm-9 form-control",
+              attrs: { type: "date", id: "task-date" }
+            })
+          ]),
+          _vm._v(" "),
           _c(
             "button",
             { staticClass: "btn btn-primary", attrs: { type: "submit" } },
@@ -37956,6 +37988,8 @@ var render = function() {
           _vm._m(1),
           _vm._v(" "),
           _vm._m(2),
+          _vm._v(" "),
+          _vm._m(3),
           _vm._v(" "),
           _c(
             "button",
@@ -38021,6 +38055,23 @@ var staticRenderFns = [
         attrs: { type: "text", id: "person-in-charge" }
       })
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group row" }, [
+      _c(
+        "label",
+        { staticClass: "col-sm-3 col-form-label", attrs: { for: "task-date" } },
+        [_vm._v("Task Date")]
+      ),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "col-sm-9 form-control",
+        attrs: { type: "date", id: "task-date" }
+      })
+    ])
   }
 ]
 render._withStripped = true
@@ -38057,6 +38108,8 @@ var render = function() {
           _c("td", [_vm._v("Content1")]),
           _vm._v(" "),
           _c("td", [_vm._v("Ichiro")]),
+          _vm._v(" "),
+          _c("td", [_vm._v("2020-12-14")]),
           _vm._v(" "),
           _c(
             "td",
@@ -38106,6 +38159,8 @@ var render = function() {
           _vm._v(" "),
           _c("td", [_vm._v("Jiro")]),
           _vm._v(" "),
+          _c("td", [_vm._v("2020-12-20")]),
+          _vm._v(" "),
           _c(
             "td",
             [
@@ -38148,6 +38203,8 @@ var render = function() {
           _c("td", [_vm._v("Content3")]),
           _vm._v(" "),
           _c("td", [_vm._v("Saburo")]),
+          _vm._v(" "),
+          _c("td", [_vm._v("2021-01-01")]),
           _vm._v(" "),
           _c(
             "td",
@@ -38201,6 +38258,8 @@ var staticRenderFns = [
         _c("th", { attrs: { scope: "col" } }, [_vm._v("Content")]),
         _vm._v(" "),
         _c("th", { attrs: { scope: "col" } }, [_vm._v("Person In Charge")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Task Date")]),
         _vm._v(" "),
         _c("th", { attrs: { scope: "col" } }, [_vm._v("Show")]),
         _vm._v(" "),
@@ -38278,7 +38337,9 @@ var render = function() {
           _vm._v(" "),
           _vm._m(1),
           _vm._v(" "),
-          _vm._m(2)
+          _vm._m(2),
+          _vm._v(" "),
+          _vm._m(3)
         ])
       ])
     ])
@@ -38345,6 +38406,28 @@ var staticRenderFns = [
           readonly: "",
           id: "person-in-charge",
           value: "Ichiro"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group row border-bottom" }, [
+      _c(
+        "label",
+        { staticClass: "col-sm-3 col-form-label", attrs: { for: "task-date" } },
+        [_vm._v("Task Date")]
+      ),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "col-sm-9 form-control-plaintext",
+        attrs: {
+          type: "date",
+          readonly: "",
+          id: "task-date",
+          value: "2020-12-14"
         }
       })
     ])
