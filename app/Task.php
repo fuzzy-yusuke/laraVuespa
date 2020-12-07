@@ -10,5 +10,6 @@ class Task extends Model
         'title',
         'content',
         'person_in_charge',
+        'task_date',
     ];
 }
