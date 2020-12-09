@@ -15,6 +15,7 @@
             </thead>
             <tbody>
                 <tr  v-for="(task,index) in tasks" :key="index">
+                <!--データがある分繰り返し表示処理される-->
                     <th scope="row">{{task.id}}</th>
                     <td>{{task.title}}</td>
                     <td>{{task.content}}</td>
