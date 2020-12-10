@@ -32,7 +32,7 @@
                         </router-link>
                     </td>
                     <td>
-                        <button class="btn btn-danger">Delete</button>
+                        <button class="btn btn-danger" v-on:click="deleteTask(task.id)">Delete</button>
                     </td>
                 </tr>
             </tbody>
@@ -54,6 +54,12 @@ export default {
                      this.tasks=res.data;  //レスポンスをtasks配列に格納
                  });
         }
+    },
+    deleteTask(id){                         //引数として受け取ったIDのタスクを削除させる
+        axios.delete('/api/tasks/' + id)
+             .then((res) => {
+                 this.getTasks();           //削除完了後、一覧ページをリダイレクト
+             });
     },
     mounted(){
         this.getTasks();                   //画面が表示されると、getTasksメソッドが実行
