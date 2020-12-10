@@ -35,7 +35,7 @@ export default {
     props:{
         taskId: String //taskIdをURLパラメータとして受け取る
     },
-    data:{
+    data: function{
         return{
             task:{}
         }
